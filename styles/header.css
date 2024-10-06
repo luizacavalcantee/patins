@@ -28,7 +28,7 @@ header {
     }
 
     a span {
-        font: 500 0.75rem/1.3 "Inter", sans-serif;
+        font-size: 0.75rem;
         position: absolute;
         top: -0.5rem;
         right: -0.5rem;
