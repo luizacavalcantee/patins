@@ -2,8 +2,10 @@ section.galeria {
     width: 100%;
     max-width: 80em;
     padding: 2.5rem 2rem;
-
     margin-inline: auto;
+    @media (max-width: 80em) {
+        padding: 1.5rem;
+    }
 
     & header {
         text-align: center;
@@ -11,6 +13,9 @@ section.galeria {
 
     & header span {
         font: 500 var(--text-sm)/1.5 var(--ff-base);
+        @media (max-width: 80em) {
+            font-size: 0.75rem;
+        }
     }
 
     & img {
@@ -24,8 +29,16 @@ section.galeria {
         grid-template-areas: 
         "A B B"
         "C C D";
-
         gap: 2.5rem;
+        @media (max-width: 80em) {
+            margin-top: 1.5rem;
+            grid-template-areas: 
+            "A"
+            "B"
+            "C"
+            "D";
+            gap: 1.5rem;
+        }
     }
 
     & figure {

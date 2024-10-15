@@ -28,6 +28,10 @@ body {
     background-color: var(--bg);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html, button {
     font: 500 1rem/1.5 var(--ff-base);
 }
@@ -39,11 +43,17 @@ h1, h2 {
 h1 {
     font-size: var(--text-xl);
     line-height: 1.25;
+    @media (max-width: 80em) {
+        font-size: var(--text-lg);
+    }
 }
 
 h2 {
     font-size: var(--text-lg);
     line-height: 1.2;
+    @media (max-width: 80em) {
+        font-size: 1.5rem;
+    }
 }
 
 a {
